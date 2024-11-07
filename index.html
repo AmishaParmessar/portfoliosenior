@@ -7,6 +7,7 @@
     <title>Coast Kit</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -40,7 +41,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="fadeIn">
         <div class="projects-content">
             <h2>Our Projects</h2>
             <p>Explore our curated collections and learn more about what we do.</p>
@@ -49,7 +50,7 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
+    <section id="resume" class="slideIn">
         <div class="resume-content">
             <h2>Our Resume</h2>
             <p>We have a wealth of experience in the coastal lifestyle and outdoor adventure industries.</p>
@@ -58,7 +59,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="zoomIn">
         <div class="contact-content">
             <h2>Contact Us</h2>
             <p>Get in touch with us to learn more or ask about our products.</p>
@@ -70,12 +71,18 @@
         <div class="footer-content">
             <p>&copy; 2024 Coast Kit. All Rights Reserved.</p>
             <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Pinterest</a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal('.fadeIn', { delay: 300, duration: 1000, distance: '50px', easing: 'ease-in-out' });
+        ScrollReveal().reveal('.slideIn', { delay: 500, duration: 1200, distance: '100px', origin: 'left', easing: 'ease-in-out' });
+        ScrollReveal().reveal('.zoomIn', { delay: 700, duration: 1000, scale: 0.8, easing: 'ease-in-out' });
+    </script>
 </body>
 </html>
