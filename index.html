@@ -10,38 +10,41 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
         <div class="navbar">
             <div class="logo">Coast Kit</div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Explore the Coast</h1>
             <p>Your adventure awaits with the perfect coastal kit.</p>
-            <a href="#" class="btn">Shop Now</a>
+            <a href="#shop" class="btn">Shop Now</a>
         </div>
     </section>
 
-    <section class="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="about-content">
             <h2>About Us</h2>
             <p>Coast Kit is all about adventure, style, and the beauty of the coast. Our curated collections of high-quality products are designed for the beach lover in all of us.</p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#shop" class="btn">Shop Now</a>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="fadeIn">
+    <section id="projects" class="projects">
         <div class="projects-content">
             <h2>Our Projects</h2>
             <p>Explore our curated collections and learn more about what we do.</p>
@@ -49,17 +52,8 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="slideIn">
-        <div class="resume-content">
-            <h2>Our Resume</h2>
-            <p>We have a wealth of experience in the coastal lifestyle and outdoor adventure industries.</p>
-            <a href="#" class="btn">Download Resume</a>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="zoomIn">
+    <section id="contact" class="contact">
         <div class="contact-content">
             <h2>Contact Us</h2>
             <p>Get in touch with us to learn more or ask about our products.</p>
@@ -67,6 +61,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Coast Kit. All Rights Reserved.</p>
@@ -77,12 +72,13 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
     <script>
-        ScrollReveal().reveal('.fadeIn', { delay: 300, duration: 1000, distance: '50px', easing: 'ease-in-out' });
-        ScrollReveal().reveal('.slideIn', { delay: 500, duration: 1200, distance: '100px', origin: 'left', easing: 'ease-in-out' });
-        ScrollReveal().reveal('.zoomIn', { delay: 700, duration: 1000, scale: 0.8, easing: 'ease-in-out' });
+        // Reveal animations for sections as they come into view
+        ScrollReveal().reveal('.about', { delay: 300, duration: 1000, distance: '50px', easing: 'ease-in-out' });
+        ScrollReveal().reveal('.projects', { delay: 500, duration: 1200, distance: '100px', origin: 'left', easing: 'ease-in-out' });
+        ScrollReveal().reveal('.contact', { delay: 700, duration: 1000, scale: 0.8, easing: 'ease-in-out' });
     </script>
 </body>
 </html>
