@@ -1,70 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coast Kit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#project">Projects</a></li>
-                
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="logo">Coast Kit</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage of my website. Enjoy browsing! 
-My shop class teacher is Ms. Cruz, and she teaches the class about the use of coding languages such as HTML and CSS. 
-  My skills in coding were taght by Ms. Ramirez whom I had for 2 years and I am grateful for the help and 
-  support she provided me and this guided me to develop in the wolrd of technology and computer science.</p>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the Coast</h1>
+            <p>Your adventure awaits with the perfect coastal kit.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>This section is about me and my interests.</p>
-        </section>
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Coast Kit is all about adventure, style, and the beauty of the coast. Our curated collections of high-quality products are designed for the beach lover in all of us.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Here are the services I offer.</p>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-content">
+            <h2>Our Projects</h2>
+            <p>Explore our curated collections and learn more about what we do.</p>
+            <a href="#" class="btn">View Projects</a>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out via email at amishap3@nycstudents.net</p>  <!-- put a linkedin acount here too--> 
-        </section>
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="resume-content">
+            <h2>Our Resume</h2>
+            <p>We have a wealth of experience in the coastal lifestyle and outdoor adventure industries.</p>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+    </section>
 
- <section id="project">
-            <h2>Projects</h2>
-            <p>Here are projects I have worked on.</p>
-            <a href= "https://amishaparmessar.github.io/PortfolioSpring11/index.html" </a>
-
-
-
-
-     
-        </section>
-        
-    </main>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us to learn more or ask about our products.</p>
+            <a href="mailto:contact@coastkit.com" class="btn">Email Us</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Coast Kit. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
     </footer>
 
-
-
-
-    
 </body>
 </html>
